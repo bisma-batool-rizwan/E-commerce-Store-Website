@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout - Nova Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="navbar">
+
+<h2 class="logo">Nova Store</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<section class="features">
+
+
+<h1>Complete Your Order</h1>
+
+
+<form 
+action="https://formsubmit.co/YOUR_EMAIL@gmail.com"
+method="POST"
+class="order-form">
+
+
+<input 
+type="text"
+name="Name"
+placeholder="Full Name"
+required>
+
+
+<input 
+type="email"
+name="Email"
+placeholder="Email Address"
+required>
+
+
+<input 
+type="tel"
+name="Phone"
+placeholder="Phone Number"
+required>
+
+
+<textarea
+name="Address"
+placeholder="Delivery Address"
+required></textarea>
+
+
+<input 
+type="text"
+id="orderDetails"
+name="Order Details"
+readonly>
+
+
+<input 
+type="hidden"
+name="_subject"
+value="New Nova Store Order">
+
+
+<button type="submit">
+Place Order
+</button>
+
+
+</form>
+
+
+</section>
+
+
+<script src="checkout.js"></script>
+
+
+</body>
+
+</html>
