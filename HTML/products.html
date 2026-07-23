@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nova Store Products</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+<h2 class="logo">Nova Store</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="cart.html">🛒 Cart</a></li>
+<li><a href="profile.html">Profile</a></li>
+</ul>
+
+</nav>
+
+<div class="shop-tools">
+
+<input 
+type="text" 
+id="searchInput"
+placeholder="Search products..."
+onkeyup="searchProducts()"
+>
+
+
+<div class="categories">
+
+<button onclick="filterCategory('all')">
+All
+</button>
+
+<button onclick="filterCategory('tech')">
+Tech
+</button>
+
+
+<button onclick="filterCategory('fashion')">
+Fashion
+</button>
+
+
+<button onclick="filterCategory('beauty')">
+Beauty
+</button>
+
+</div>
+
+</div>
+
+<section class="features">
+
+<h1>Trending Products</h1>
+
+
+<div class="cards">
+
+
+<div class="card product-card" data-category="tech">
+
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500">
+
+<h3>Premium Smart Watch</h3>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+
+<h2>$99</h2>
+
+<button onclick="addToCart('Premium Smart Watch',99)">
+Add To Cart
+</button>
+
+<button onclick="buyNow('Premium Smart Watch',99)">
+Buy Now
+</button>
+
+<button onclick="openProduct('Premium Smart Watch',99)">
+View Details
+</button>
+
+<button onclick="addToWishlist('Premium Smart Watch',99)">
+❤️ Wishlist
+</button>
+
+</div>
+
+
+
+<div class="card product-card" data-category="tech">
+
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500">
+
+
+<h3>Wireless Headphones</h3>
+
+<div class="rating">
+⭐⭐⭐⭐
+</div>
+
+<h2>$59</h2>
+
+
+<button onclick="addToCart('Wireless Headphones',59)">
+Add To Cart
+</button>
+
+
+<button onclick="buyNow('Wireless Headphones',59)">
+Buy Now
+</button>
+
+<button onclick="openProduct('Wireless Headphones',59)">
+View Details
+</button>
+
+<button onclick="addToWishlist('Wireless Headphones',59)">
+❤️ Wishlist
+</button>
+
+</div>
+
+
+
+
+<div class="card product-card" data-category="tech">
+
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500">
+
+
+<h3>Smart Phone</h3>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+
+<h2>$499</h2>
+
+
+<button onclick="addToCart('Smart Phone',499)">
+Add To Cart
+</button>
+
+
+<button onclick="buyNow('Smart Phone',499)">
+Buy Now
+</button>
+
+<button onclick="openProduct('Smart Phone',499)">
+View Details
+</button>
+
+<button onclick="addToWishlist('Smart Phone',499)">
+❤️ Wishlist
+</button>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<script src="products.js"></script>
+
+</body>
+
+</html>
